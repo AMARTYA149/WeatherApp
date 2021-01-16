@@ -6,6 +6,18 @@ app.get("/", (req, res) => {
   res.send("Welcome to Weather App");
 });
 
+app.get("/about", (req, res) => {
+  res.send("Hi, I'm Amartya Aishwarya");
+});
+
+app.get("/weather", (req, res) => {
+  res.send("Search your favourite city!");
+});
+
+app.get("*", (req, res) => {
+  res.send("404 Error Page!");
+});
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
