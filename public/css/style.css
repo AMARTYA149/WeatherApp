@@ -35,6 +35,29 @@ html {
   font-size: 1.8rem;
 }
 
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+
 .navbar-toggler {
   background-color: grey;
+}
+
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: var(--main-color);
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
