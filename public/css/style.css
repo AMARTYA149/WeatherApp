@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 .row {
@@ -67,7 +67,7 @@ body {
 }
 
 .main_header_left {
-  height: 70rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +103,7 @@ body {
 }
 
 .main_header_right {
-  height: 70rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,7 @@ body {
 
 .main_header_right figure img {
   width: 70%;
-  height: 90%;
+  height: 95%;
   filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
 }
 
@@ -197,7 +197,7 @@ sup {
 .temp_form {
   width: 60%;
   position: relative;
-  margin: 10rem auto 6rem;
+  margin: 6rem auto;
 }
 
 .temp_form input[type="text"] {
@@ -237,6 +237,10 @@ sup {
 footer {
   width: 100%;
   background-color: var(--main-bg);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
   /* margin-top: auto; */
 }
 
