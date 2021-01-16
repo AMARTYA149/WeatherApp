@@ -27,11 +27,13 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/weather", (req, res) => {
-  res.render("Search your favourite city!");
+  res.render("weather");
 });
 
 app.get("*", (req, res) => {
-  res.render("404 Error Page!");
+  res.render("404error", {
+    errorMsg: "Oops! Page Not Found",
+  });
 });
 
 app.listen(port, () => {
