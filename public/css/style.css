@@ -127,3 +127,16 @@ footer p {
   line-height: 5rem;
   font-size: 1.4rem;
 }
+
+/* responsive code */
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  .main_header_right {
+    height: auto;
+    margin-top: 3rem;
+  }
+}
