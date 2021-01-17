@@ -40,24 +40,7 @@
   {{>footer}}
 
   <script src="js/main.js"></script>
-  <script>
-    const getCurrentDay = () => {
-      let weekDay = new Array(7);
-      weekDay[0] = "Sunday";
-      weekDay[1] = "Monday";
-      weekDay[2] = "Tuesday";
-      weekDay[3] = "Wednesday";
-      weekDay[4] = "Thursday";
-      weekDay[5] = "Friday";
-      weekDay[6] = "Saturday";
-
-      let currentTime = new Date();
-      let days = weekDay[currentTime.getDay()];
-      const day = document.getElementById('day');
-      day.innerText = days;
-    }
-    getCurrentDay();
-  </script>
+  <script src="js/dateTime.js"></script>
 </body>
 
 
