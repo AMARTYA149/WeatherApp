@@ -17,11 +17,11 @@ const getInfo = async (event) => {
     dataHide.classList.add("data_hide");
   } else {
     try {
-      let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=df8e6f88248f09190415815adb50cfcc`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=df8e6f88248f09190415815adb50cfcc`;
       const response = await fetch(url);
       const data = await response.json();
       const arrData = [data];
-      city_name.innerText = `${cityVal}, ${arrData[0].sys.country}`;
+      city_name.innerText = `${arrData[0].name}, ${arrData[0].sys.country}`;
       temp.innerText = arrData[0].main.temp;
 
       const tempMood = arrData[0].weather[0].main;
